@@ -14,6 +14,7 @@ class Product:
 
 class  Shop:
 
+
     def __init__(self):
         self.__file_name = 'products.txt'
 
