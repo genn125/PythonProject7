@@ -7,10 +7,10 @@
 def custom_write(file_name, strings):
     strings_positions = {}
     with open(file_name, 'w', encoding='utf-8') as file:
-        for i, string in enumerate(strings, start=1): # Номер строки
+        for i, string in enumerate(strings, 1): # Номер строки
             tell = file.tell()                        # Номер байта
-            file.write(string + '\n')
-            strings_positions[(i, tell)] = string
+            file.write(string + '\n')    # дописывает в конец текст
+            strings_positions[(i, tell)] = string  #  ключ <номер строки>, <байт начала строки>
     return strings_positions
 info = [
     'Text for tell.',
