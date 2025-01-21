@@ -11,14 +11,13 @@ def custom_write(file_name, strings):
     n = 0
     file = open(file_name, 'w', encoding='utf-8')
     for i in info:
-
         tell = (file.tell())
         n += 1
         file.write(f'{i}\n')
-
         strings_positions.update({(n, tell): i})
+
     return strings_positions
-    file.close()
+    file_name.close()
 
 result = custom_write('Текст.txt', info)
 for strings_positions in result.items():
