@@ -22,7 +22,7 @@ print('3 - Команда {} решила задач: {}!'.format(team2, score_2
 print('4 - {} решили задачи за {:.2f} секунды!'.format(team2, team2_time))
 
 # Использование f-строк:
-tasks_total = score_1 + score_2
+tasks_total = score_1 + score_2  # количество задач
 time_avg=(team1_time + team2_time) / tasks_total # среднее время решения задачи
 
 print(f'5 - Команды решили {score_1} и {score_2} задач.')
@@ -34,7 +34,6 @@ elif team1_time // (team1_num * score_1) > team2_time // (team2_num * score_2):
     print(f'7 - Результат битвы: победа команды {team2}!')
 else:
     print(f'Ничья')
-
 print(f'8 - Сегодня было решено {tasks_total} задач, в среднем по {time_avg:.1f} секунды на задачу!')
 
 print(f'\nКаждый из {team1} затратил {team1_time // (team1_num * score_1)} сек. на задачу.')
