@@ -12,6 +12,7 @@ def custom_write(file_name, strings):
             file.write(string + '\n')    # дописывает в конец текст
             strings_positions[(i, tell)] = string  #  ключ <номер строки>, <байт начала строки>
     return strings_positions
+
 info = [
     'Text for tell.',
     'Используйте кодировку utf-8.',
