@@ -9,15 +9,15 @@ class WordsFinder:
     def get_all_words (self):
         all_words = {}
         punctuation =  [',', '.', '=', '!', '?', ';', ':', '  ']
-        l=''
+        a =''
         with open(self.file_names, 'r', encoding='utf-8') as file:
             for i in file:
                 i = i.lower()
                 for j in i:
                     if j in punctuation:
                         i = i.replace(j, '')
-                l = l + i
-            all_words.update({self.file_names: l.split(),})
+                a = a + i
+            all_words.update({self.file_names: a.split()})
         return all_words
 
 

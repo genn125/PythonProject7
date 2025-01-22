@@ -4,4 +4,3 @@ It's a text for task Найти везде,
 text text text
 
 
-TEXT TEXT TEXT
