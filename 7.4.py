@@ -26,14 +26,14 @@ tasks_total = score_1 + score_2
 time_avg=(team1_time + team2_time) / tasks_total # среднее время решения
 
 print(f'5 - Команды решили {score_1} и {score_2} задач')
-if (team1_time //team1_num) < (team2_time //team2_num):
+if team1_time //team1_num < team2_time //team2_num:
     print(f'6 - Результат битвы: победа команды {team1}! Команда {team1} затратила {team1_time // team1_num} сек на задачу.')
-elif (team1_time //team1_num) > (team2_time //team2_num):
+elif team1_time //team1_num > team2_time //team2_num:
     print(f'7 - Результат битвы: победа команды {team2}! Команда {team2} затратила {team2_time // team2_num} сек на задачу.')
 else:
-    print(f'Ничья')
+    print(f'н')
 
 print(f'8 - Сегодня было решено {tasks_total} задач, в среднем по {time_avg:.1f} секунды на задачу!')
 
-# print(f'Команда {team1} затратила {team1_time // team1_num} сек на задачу')
-# print(f'Команда {team2} затратила {team2_time // team2_num} сек на задачу')
+print(f'Команда {team1} затратила {team1_time // team1_num} сек на задачу')
+print(f'Команда {team2} затратила {team2_time // team2_num} сек на задачу')
